@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcutor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div class="heading">
+            <img width="50px" height="50px" src="/calculator/calculator.gif" alt="">
+            <h2>Calculator</h2>
+        </div>
+        <input type="text" id="display" value="0"  readonly>
+        <div class="buttons">
+            <button onClick="clearValue()">AC</button>
+            <button onClick="removeLast()"><-</button>
+            <button onClick="appendValue('/')"  >%</button>
+            <button onClick="appendValue('/')" >/</button>
+
+            <button onClick="appendValue('7')">7</button>
+            <button onClick="appendValue('8')">8</button>
+            <button onClick="appendValue('9')">9</button>
+            <button onClick="appendValue('*')">X</button>
+
+            <button onClick="appendValue('4')">4</button>
+            <button onClick="appendValue('5')">5</button>
+            <button onClick="appendValue('6')">6</button>
+            <button onClick="appendValue('-')">-</button>
+
+            <button onClick="appendValue('3')">3</button>
+            <button onClick="appendValue('2')">2</button>
+            <button onClick="appendValue('1')">1</button>
+            <button onClick="appendValue('+')">+</button>
+
+            <button onClick="appendValue('0')">0</button>
+            <button onClick="appendValue('00')">00</button>
+            <button onClick="appendValue('.')">.</button>
+            <button onClick="calculate()">=</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

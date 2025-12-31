@@ -1,0 +1,21 @@
+    --Create a counter
+
+    --create functions:
+        --increase counter
+        --decrease counter
+        --display counter value
+    
+    create a user form
+    username , password
+    if matched with default 
+    show login successfully
+    login failed
+
+    Create a to do app
+    input field to enter task
+    button to add task into list
+
+    display list of added tasks
+    done button infront of each task in list
+    button will removed and colour change to green
+    useState([])

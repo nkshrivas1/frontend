@@ -1,0 +1,25 @@
+.card{
+    margin: 20px;
+    padding: 10px;
+    /* background-color: rgb(25, 71, 4); */
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 25%;
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2;
+  justify-content: center;
+}
+.bg-red{
+  background-color: red;
+}
+.bg-blue{
+  background-color: blue;
+}
+.bg-black{
+  background-color: black;
+}

@@ -1,0 +1,67 @@
+ Very Basic Components
+Goal: Understand what a component is
+Create a component called Hello.
+It should display: Hello, React!
+Create a Welcome component.
+Show your name inside an <h1> tag.
+Create two components:
+Header
+Footer
+Render both inside App.
+
+ Props (Passing Data)
+Goal: Learn how components communicate
+Create a Greeting component.
+Pass a name prop from App.
+Display: Hello, <name>
+Create a UserCard component.
+Props: username, age
+Display them in separate <p> tags.
+Render the same UserCard component 3 times with different data.
+
+Component Reusability
+Goal: Reuse components instead of repeating code
+Create a Button component.
+It should accept a text prop.
+Create a Card component.
+Use {children} to display content inside the card.
+Wrap different content inside the same Card component.
+
+ Conditional Rendering
+Goal: Show or hide components
+Create a Status component.
+If isOnline is true → show Online
+Else → show Offline
+Create a Message component.
+If no prop is passed, show No messages.
+
+ Lists & Keys
+Goal: Render components dynamically
+Create an array of names.
+Render each name using a NameItem component.
+Create a Product component.
+Render a list of products using .map().
+
+ Component Structure Practice
+Goal: Think in components
+Break this UI into components:
+[ Header ]
+[ Profile ]
+[   Avatar ]
+[   Name ]
+[ Footer ]
+
+Rebuild it using separate components and render them in App.
+
+Bonus Mini Challenges
+Create a CounterDisplay component that only displays a number.
+Create a Title component that accepts:
+text
+color
+Make a Badge component that shows:
+NEW if isNew is true
+ Learning Rule (Important)
+After each task, ask:
+What data does this component need?
+Should it come from props or be hardcoded?
+

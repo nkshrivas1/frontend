@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    background-color:azure;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar .menu{
+    display: none;
+}
+.navbar li{
+    margin: 0 15px;
+    list-style: none;
+}
+.navbar li a{
+    color: #3c4249;
+}
+
+header{
+    background-color: #3c4249;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+header h1{
+    margin: 10px 0 5px;
+}
+header h3{
+    margin:0;
+    font-weight:normal
+}
+.card{
+    background-color:  white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0 ,0,0.1);
+}
+
+@media screen and (max-width:525px) {
+    .navbar ul{
+        display: none;
+    }
+    .navbar .menu{
+        display: inline;
+        margin-top: 15px;
+    }
+}
