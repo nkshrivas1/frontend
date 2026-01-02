@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Roboto:wght@500&display=swap");
+
+.not-found {
+  min-height: 100vh;
+  background: linear-gradient(to right, rgb(25, 227, 238) 50%, #383838 50%);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.not-found main {
+  max-width: 500px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+/* Heading */
+.not-found h1 {
+  font-family: "Fontdiner Swanky", cursive;
+  font-size: 4rem;
+  color: #c5dc50;
+  margin-bottom: 1rem;
+}
+
+/* Text */
+.not-found p {
+  margin-bottom: 2.5rem;
+}
+
+.not-found p em {
+  font-style: italic;
+  color: #c5dc50;
+}
+
+/* Button */
+.not-found button {
+  font-family: "Fontdiner Swanky", cursive;
+  font-size: 1rem;
+  color: #383838;
+  border: none;
+  background-color: #f36a6f;
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.not-found button:hover {
+  background-color: #c5dc50;
+  transform: scale(1.1);
+}
+
+/* Remove default link styling */
+.not-found a {
+  text-decoration: none;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 700px) {
+  .not-found {
+    background: #383838;
+    font-size: 16px;
+    padding: 1rem;
+  }
+
+  .not-found h1 {
+    font-size: 3rem;
+  }
+}
