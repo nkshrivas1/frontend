@@ -1,13 +1,7 @@
 import { TextField } from "@mui/material"
 import { useState } from "react";
+import type Product from "./interface/product";
 
-interface Product {
-    id: number;
-    name: string;
-    price: number;
-    category: string;
-    image: string;
-}
 
 export const AddProduct = () => {
     const [product, setProduct] = useState<Omit<Product, "id">>({

@@ -2,7 +2,7 @@
 import {createBrowserRouter, Navigate} from "react-router-dom";
 import Layout from "./Layout";
 import Products from "../pages/Products";
-import { AddProduct } from "../pages/AddProduct";
+import { AddProduct } from "../pages/products/AddProduct";
 import NotFound from "../pages/NotFound";
 
 const router = createBrowserRouter([
