@@ -1,4 +1,5 @@
 import { useState } from "react"
+import TextField from '@mui/material/TextField';
 
 const TodDo = () => {
     const [tasks, setTasks] = useState([])
@@ -18,18 +19,34 @@ const TodDo = () => {
         })
         setTasks(updatedTasks)
     }
+     const deleteTask = (index) => {
+        const updatedTasks = tasks.filter((t, i) => i != index)
+        setTasks(updatedTasks)
+    }
+    
     return (
         <>
             <div>ToDo</div>
             <label htmlFor="task">New task</label>
-            <input type="text" name="task" id=""
+            {/* <input type="text" name="task" id=""
                 value={task.message}
                 onChange={(e) =>
                     setTask({
                         message: e.target.value,
                         done: false
                     })}
+            /> */}
+            <TextField 
+                label="Task"
+                type="text"
+                defaultValue={task.message}
+                onChange={(e) =>
+                    setTask({
+                        message: e.target.value,
+                        done: false
+                    })}
             />
+
             <button onClick={addTask}>+Add</button>
 
             <div className="list">
@@ -38,6 +55,7 @@ const TodDo = () => {
                         <tr>
                             <th>Task</th>
                             <th>Done</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -49,6 +67,11 @@ const TodDo = () => {
                                         <button
                                             onClick={() => markDone(i)}>
                                             {t.done ? 'UnDone' : 'Done'}</button>
+                                    </td>
+                                     <td>
+                                        <button
+                                            onClick={() => deleteTask(i)}>
+                                            Delete</button>
                                     </td>
                                 </tr>
                             ))
