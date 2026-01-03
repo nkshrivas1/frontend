@@ -28,19 +28,20 @@ const EditProduct = () => {
       }
     )
   }
-   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-          e.preventDefault();
-          const exisistingProducts: Product[] =
-              JSON.parse(localStorage.getItem('products') || "[]");
-  
-              console.log("~ :39 ~ handleSubmit ~ product:", product)
-          localStorage.setItem('products', JSON.stringify(
-              [...exisistingProducts, product]
-          ))
-          
-  
-      }
-  
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const exisistingProducts: Product[] =
+      JSON.parse(localStorage.getItem('products') || "[]");
+    const updatedProducts =
+      exisistingProducts.map(pro =>
+        pro.id === Number(id) ? product : pro)
+    localStorage.setItem('products', JSON.stringify(
+      updatedProducts
+    ))
+
+
+  }
+
   useEffect(() => {
     // first
     console.log('on mounted');
