@@ -30,11 +30,14 @@ const EditProduct = () => {
   }
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
     const exisistingProducts: Product[] =
       JSON.parse(localStorage.getItem('products') || "[]");
+
     const updatedProducts =
       exisistingProducts.map(pro =>
         pro.id === Number(id) ? product : pro)
+
     localStorage.setItem('products', JSON.stringify(
       updatedProducts
     ))
