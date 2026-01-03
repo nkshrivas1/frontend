@@ -8,7 +8,6 @@ const Layout = () => {
                 <li>
                     <Link to={'/add-product'} >Add Product</Link>
                     <Link to={'/products'} >Products</Link>
-                    <Link to={'/edit-product'} >Edit Product</Link>
 
                 </li>
             </ul>

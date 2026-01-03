@@ -21,7 +21,7 @@ export const AddProduct = () => {
             }
         )
     }
-
+// name price category required
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const exisistingProducts: Product[] =
@@ -60,7 +60,7 @@ export const AddProduct = () => {
                         margin="normal"
                     />
                 </div>
-                 <div>
+                <div>
                     <label htmlFor="">Product Price</label>
                     <TextField
                         label="Product Price"
@@ -71,7 +71,7 @@ export const AddProduct = () => {
                         margin="normal"
                     />
                 </div>
-                 <div>
+                <div>
                     <label htmlFor="">Product Category</label>
                     <TextField
                         label="Product Category"
@@ -82,7 +82,7 @@ export const AddProduct = () => {
                         margin="normal"
                     />
                 </div>
-                 <div>
+                <div>
                     <label htmlFor="">Product Image</label>
                     <TextField
                         label="Product Image"
